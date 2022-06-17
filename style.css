@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/bg-intro-desktop.png');
+    background-color: #F67977;
+}
+
+main {
+    padding: 4em;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.left{
+    width: 45%;
+    color: #FAFFFE;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-head{
+    font-family: "Poppins";
+    font-size: 45px;
+}
+
+.left-text{
+    font-family: "Poppins";
+    font-size: 18px;
+    margin-top: 1em;
+}
+
+.right{
+    width: 45%;
+}
+
+.right-top {
+    height: 4em;
+    background-color: #5D54A3;
+    color: #B8B7C1;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 1em;
+    font-size: 18px;
+    font-family: "Poppins";
+}
+
+.right-top bold {
+    color: white;
+}
+
+.rigth-second{
+    height: 50vh;
+    padding: 2em;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+p .bold{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.fill-input{
+    height: 3em;
+    border-radius: 5px;
+    border: 1px solid #F67977;
+    background-color: white;
+}
+
+.free-trial {
+    height: 3em;
+    width: auto;
+    text-transform: uppercase;
+    background-color: #77E2B4;
+    color: #FAFFFE;
+    border-color: transparent;
+    border-radius: 5px;
+    font-size: 18px;
+}
