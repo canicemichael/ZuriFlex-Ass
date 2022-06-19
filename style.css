@@ -128,6 +128,9 @@ input[type=text]:focus {
     }
 }
 @media screen and (max-width: 893px){
+    main{
+        height: auto;
+    }
     .row{
         flex-direction: column;
         align-items: center;
@@ -135,12 +138,26 @@ input[type=text]:focus {
     .left{
         width: 80%;
         text-align: center;
-        margin: 2em;
+        margin-bottom: 2em;
     }
     .right{
         width: 80%;
     }
     .right-second{
         height: 50vh;
+    }
+}
+@media screen and (max-width: 425px){
+    .left-head{
+        font-size: 26px;
+    }
+    .left-text{
+        font-size: 14px;
+    }
+    .left{
+        width: 90%;
+    }
+    .right{
+        width: 90%;
     }
 }
