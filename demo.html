@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .invalid{
+        border: 2px solid red;
+    }
+</style>
+<body>
+    <form action="" class="contact-form">
+        <div class="form-check">
+            <input type="text" id="first-name" name="first-name" placeholder="first Name">
+        </div>
+        <div class="form-check">
+            <input type="text" id="last-name" name="last-name" placeholder="first Name">
+        </div>
+        <div class="form-check">
+            <input type="text" id="message" name="message" placeholder="Message">
+        </div>
+        <button type="submit">Sumbit</button>
+    </form>
+</body>
+<script>
+    const contactForm = document.querySelector(".contact-form")
+    const firstName = document.querySelector("#first-name");
+    const lastName = document.querySelector('#last-name');
+
+    contactForm.addEventListener("submit", submitForm);
+    contactForm.addEventListener("input", validateInput);
+
+    function validateInput(e){
+        let isInvalid = false;
+        const value = e.target.value.trim();
+        switch (e.target.name){
+            case "first-name":
+                isInvalid = value === "";
+                break;
+
+            case "last-name":
+            isInvalid = value === "";
+            break;
+
+            case "message":
+            isInvalid = value === "";
+            break;
+        }
+        e.target.classList.toggle("invalid", isInvalid);
+        return isInvalid;
+    }
+
+    function submitForm(e) {
+        e.preventDefault();
+
+        const isInvalid = validateInput({target: firstName}) |
+                          validateInput({target: lastName}) |
+                          validateInput({target: message});
+
+        if (isInvalid) {
+            // give a command here
+        }
+    }
+</script>
+</html>

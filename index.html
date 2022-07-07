@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+
+    <script defer src="./index.js"></script>
 </head>
 <body>
     <main>
@@ -23,11 +25,24 @@
                     <p><bold>Try it for 7 days</bold> then $20/mo. thereafter</p>
                 </div>
                 <div>
-                    <form action="" class="rigth-second">
-                        <input class="fill-input" type="text" placeholder="First Name" required>
-                        <input class="fill-input" type="text" placeholder="Last Name" required>
-                        <input class="fill-input" type="email" placeholder="Email Address" required>
-                        <input class="fill-input" type="password" placeholder="Password" required>
+                    <form action="/" class="rigth-second" id="form">
+                        <div class="input-control">
+                            <input class="fill-input" id="first-name" name="first-name" type="text" placeholder="First Name">
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <input class="fill-input" id="last-name" name="last-name" type="text" placeholder="Last Name">
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <input class="fill-input" id="email" name="email" type="email" placeholder="Email Address">
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <input class="fill-input" id="password" name="password" type="password" placeholder="Password">
+                            <div class="error"></div>
+                        </div>
+                        
                         <button type="submit" class="free-trial">
                             Claim Your Free Trial
                         </button>
@@ -36,6 +51,6 @@
                 </div>
             </div>
         </div>
-    </main>
+    </main>    
 </body>
 </html>
