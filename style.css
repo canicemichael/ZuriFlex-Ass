@@ -138,6 +138,17 @@ input[type=password]:focus {
     background-color: white;
 }
 
+.input-control{
+    position: relative;
+}
+
+.input-control img{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    visibility: hidden;
+}
+
 .input-control.error input {
     border-color: #F67977;
 }
@@ -148,6 +159,9 @@ input[type=password]:focus {
     height: 13px;
     margin-top: -0.3em;
     margin-bottom: 1em;
+}
+.input-control .error img{
+    visibility: visible;
 }
 div.error{
     float: right;

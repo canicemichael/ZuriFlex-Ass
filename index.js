@@ -14,7 +14,9 @@ form.addEventListener('submit', e => {
 const setError = (element, message) => {
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector('.error');
+    // const iconDisplay = inputControl.querySelector('.icn');
 
+    // inputControl.className = 'form control error'
     errorDisplay.innerText = message;
     inputControl.classList.add('error');
     inputControl.classList.remove('success');
